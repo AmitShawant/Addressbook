@@ -11,4 +11,4 @@
       name: docker
       state: started
   - name: create a container
-    command: docker run -itd --name addressbook -p 8000:8000 amitshaw079/project
+    command: docker run -itd --name addressbook -p 8080:8080 amitshaw079/project
