@@ -2,13 +2,5 @@
 - hosts: docker
   become: true
   tasks:
-  - name: Install Docker
-    package:
-      name: docker
-      state: present
-  - name: Start Docker service
-    service:
-      name: docker
-      state: started
   - name: create a container
     command: docker run -itd --name addressbook -p 8080:8080 amitshaw079/project
